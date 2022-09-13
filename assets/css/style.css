@@ -1,0 +1,128 @@
+/* Loader Ajax */
+/*Hidden class for adding and removing*/
+.lds-dual-ring.hidden {
+	display: none;
+}
+
+/*Add an overlay to the entire page blocking any further presses to buttons or other elements.*/
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 9999;
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+/*Spinner Styles*/
+.lds-dual-ring {
+	display: inline-block;
+	/* width: 80px;
+        height: 80px; */
+}
+.lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 5% auto;
+	border-radius: 50%;
+	border: 6px solid #fff;
+	border-color: #fff transparent #fff transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.select2-container .select2-selection--single {
+	height: 32px;
+}
+
+.select2-container--default
+	.select2-selection--single
+	.select2-selection__rendered {
+	line-height: 20px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+	padding-left: 0px;
+	padding-right: 5px;
+}
+
+.btn-group,
+.btn-group-vertical,
+div.dataTables_wrapper div.dataTables_info {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.form-control-plaintext {
+	display: block;
+	width: 100%;
+	padding-top: 0.375rem;
+	padding-bottom: 0.375rem;
+	margin-bottom: 0;
+	line-height: 1.5;
+	background-color: transparent;
+	border: solid transparent;
+	border-width: 1px 0;
+}
+
+.select2-container {
+	display: block;
+	width: 100% !important;
+}
+
+body {
+	font-size: 13px;
+}
+
+.btn {
+	font-size: 12px;
+}
+
+.btn-sm {
+	font-size: 11px;
+}
+
+.form-control-plaintext {
+	font-size: 12px;
+}
+
+.form-control {
+	font-size: 12px;
+}
+
+.btn-group .btn {
+	font-size: 12px;
+}
+
+.navbar-brand {
+	display: inline-block;
+	margin-right: 1rem;
+	line-height: inherit;
+	white-space: nowrap;
+	padding: 5px 15px 0px 15px;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #007bff;
+}
+
+.sub {
+	padding-top: 0px;
+	display: block;
+	font-size: 15px !important;
+}

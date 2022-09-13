@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u1315893/public_html/fiberhome/
+    - /bin/cp -R * $DEPLOYPATH
